@@ -9,7 +9,7 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 
 ## Features:
 - Enter and save any stock ticker symbol  
-- Fetches real time stock prices using Alpha Vantage  
+- Fetches real time stock prices using Finnhub  
 - Uses Chrome Storage API to remember your chosen symbol  
 - Clean popup interface with stock price display  
 - Custom stock-trend icons  
@@ -19,7 +19,7 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 1. Clone the repo:  
    git clone https://github.com/your-username/Chrome-Stock-Ticker-Extension.git
    cd Chrome-Stock-Ticker-Extension
-2. Get a free API key from Alpha Vantage at https://www.alphavantage.co/support/#api-key
+2. Get a free API key from Finhubb at https://finnhub.io/ 
 3. Create a config.js file in the project root:
     const apiKey = "YOUR_API_KEY_HERE";
 4. Open Chrome and go to chrome://extensions.

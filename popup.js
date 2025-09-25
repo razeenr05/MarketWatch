@@ -21,10 +21,10 @@ saveBtn.addEventListener("click", () => {
 // Fetch stock price
 async function fetchStock(symbol) {
   try {
-    const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+    const url = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`;
     const res = await fetch(url);
     const data = await res.json();
-    const price = data["Global Quote"]["05. price"];
+    const price = data.c;
     priceDiv.textContent = `${symbol}: $${parseFloat(price).toFixed(2)}`;
   } catch (err) {
     priceDiv.textContent = "Error fetching stock price.";
