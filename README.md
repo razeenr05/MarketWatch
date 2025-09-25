@@ -1,4 +1,8 @@
-# Chrome Stock Ticker Extension
+<p align="center">
+  <img src="icons/banner.png" alt="MarketWatch Banner" width="800">
+</p>
+
+## A Chrome Stock Ticker Extension
 
 A lightweight Chrome extension that displays real time stock prices in a popup window using the Alpha Vantage API. 
 Users can enter any stock symbol, save it, and instantly fetch the current price.
