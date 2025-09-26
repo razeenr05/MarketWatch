@@ -33,7 +33,3 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 - Show stock price directly on the toolbar badge
 - Support multiple saved stocks
 - Add charts for recent price trends
-
-## License
-
-MIT License
