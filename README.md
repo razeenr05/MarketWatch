@@ -18,7 +18,6 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 
 1. Clone the repo:  
    git clone https://github.com/your-username/Chrome-Stock-Ticker-Extension.git
-   cd Chrome-Stock-Ticker-Extension
 2. Get a free API key from Finhubb at https://finnhub.io/ 
 3. Create a config.js file in the project root:
     const apiKey = "YOUR_API_KEY_HERE";
