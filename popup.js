@@ -13,6 +13,7 @@ chrome.storage.sync.get("stockSymbol", ({ stockSymbol }) => {
 // Save stock symbol
 saveBtn.addEventListener("click", () => {
   const symbol = symbolInput.value.toUpperCase();
+  symbolInput.value = symbol; 
   chrome.storage.sync.set({ stockSymbol: symbol }, () => {
     fetchStock(symbol);
   });
