@@ -27,8 +27,9 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 7. Pin the extension and test it from the toolbar.
 
 ## Future Improvements
-- Improve popup.html
+- Show stock changes in the popup itself !
 - Support multiple saved stocks
 - Add charts for recent price trends
+- Improve popup.html ✓
 - Update the ticker periodically when open ✓
 - Show stock price change directly on the toolbar badge ✓

@@ -5,10 +5,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>MarketWatch</h2>
-  <input id="symbol" placeholder="Enter stock symbol">
-  <button id="save">Save</button>
-  <div id="price"></div>
+  <div class="popup-container">
+    <div class="header">
+      <img src="icons/icon48.png" alt="MarketWatch Logo" class="logo">
+      <h2 class="title">MarketWatch</h2>
+    </div>
+
+    <div class="content">
+      <input id="symbol" placeholder="Enter stock symbol" />
+      <button id="save">Save</button>
+      <div id="price"></div>
+    </div>
+  </div>
+
   <script src="config.js"></script>
   <script src="popup.js"></script>
 </body>
