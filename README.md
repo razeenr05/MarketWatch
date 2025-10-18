@@ -4,7 +4,7 @@
 
 ## A Chrome Stock Ticker Extension
 
-A lightweight Chrome extension that displays real time stock prices in a popup window using the Alpha Vantage API. 
+A lightweight Chrome extension that displays real time stock prices in a popup window using the Finnhub API. 
 Users can enter any stock symbol, save it, and instantly fetch the current price.
 
 ## Features:
