@@ -2,8 +2,9 @@ importScripts("config.js");
 
 let lastPrice = null; // var to store the last fetched price
 
-//create badge
+//create update badge func
 async function updateBadge() {
+    //fetch stockSymbol
     chrome.storage.sync.get("stockSymbol", async ({ stockSymbol }) => {
         if (!stockSymbol) {
         chrome.action.setBadgeText({ text: "" });
