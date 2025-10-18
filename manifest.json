@@ -3,7 +3,9 @@
     "name": "Stock Ticker",
     "version": "1.0",
     "description": "Displays the current price of a user-selected stock.",
-    "permissions": ["storage"],
+    "permissions": ["storage", "alarms"],
+    "background": {
+      "service_worker": "background.js"},
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
@@ -11,6 +13,12 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
       }
-    }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["config.js"],
+        "matches": ["<all_urls>"]
+      }
+    ] 
   }
   
