@@ -31,3 +31,11 @@ async function fetchStock(symbol) {
     priceDiv.textContent = "Error fetching stock price.";
   }
 }
+
+//automatically refreshes price every 60 seconds while popup open
+setInterval(() => {
+  const symbol = symbolInput.value.toUpperCase();
+  if (symbol) {
+    fetchStock(symbol);
+  }
+}, 60000);
