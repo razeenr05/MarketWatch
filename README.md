@@ -28,7 +28,7 @@ Users can enter any stock symbol, save it, and instantly fetch the current price
 
 ## Future Improvements
 - Improve popup.html
-- Add a background.js to update the ticker periodically
-- Show stock price directly on the toolbar badge
 - Support multiple saved stocks
 - Add charts for recent price trends
+- Update the ticker periodically when open ✓
+- Show stock price change directly on the toolbar badge ✓
