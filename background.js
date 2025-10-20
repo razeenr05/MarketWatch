@@ -1,15 +1,13 @@
 importScripts("config.js");
 
-let lastPrice = null; // var to store the last fetched price
-
 //create update badge func
 async function updateBadge() {
     //fetch stockSymbol
-    chrome.storage.sync.get("stockSymbol", async ({ stockSymbol }) => {
+    chrome.storage.sync.get(["stockSymbol", "lastPrice"], async ({ stockSymbol, lastPrice }) => {
         if (!stockSymbol) {
-        chrome.action.setBadgeText({ text: "" });
-        return;
-    }
+            chrome.action.setBadgeText({ text: "" });
+            return;
+        }
 
     try {
         const url = `https://finnhub.io/api/v1/quote?symbol=${stockSymbol}&token=${apiKey}`;
@@ -22,7 +20,7 @@ async function updateBadge() {
         let badgeText = "";
         let badgeColor = "#808080";
 
-        if (lastPrice !== null) {
+        if (lastPrice !== null && lastPrice !== undefined) {
             // price went up, show green
             if (price > lastPrice) {
             badgeText = "↑"; 
@@ -44,7 +42,7 @@ async function updateBadge() {
         chrome.action.setBadgeBackgroundColor({ color: badgeColor });
 
         //save the last price for next comparison
-        lastPrice = price;
+        chrome.storage.sync.set({ lastPrice: price });
 
     } else {
         chrome.action.setBadgeText({ text: "?" });

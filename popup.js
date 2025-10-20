@@ -38,4 +38,4 @@ setInterval(() => {
   if (symbol) {
     fetchStock(symbol);
   }
-}, 60000);
+}, 30000);
